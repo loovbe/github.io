@@ -34,11 +34,9 @@ viewBox="0 0 1200 1800"
    <rect id="_229758368" class="fil1" transform="matrix(2.27419E-014 0.831168 -0.96722 -0.219838 1142.59 784.087)" width="63.754" height="100.881"/>
    <rect id="_229758416" class="fil2" transform="matrix(2.27419E-014 0.831168 -0.858687 0.169924 1131.65 744.813)" width="63.754" height="100.881"/>
   </g>
-  <polygon class="fil3 str0" points="338.76,688.271 338.76,1618.62 1092.27,1570.12 1092.27,760.45 "/>
-  
-  <path class="fil5" d="M269.01 614.665l0.0547087 0 0.00198425 0 0 0.0155906c9.14939,0.000566929 17.4546,3.73096 23.4635,9.74013 6.00775,6.00832 9.73786,14.3121 9.739,23.4601l0.0155906 0 0 0.00425197 0 140.543 -7.99994 0 0 -140.543 0 -0.00425197 0.0155906 0c-0.000850394,-6.91852 -2.84542,-13.2225 -7.42649,-17.8038 -4.58221,-4.58249 -10.8873,-7.42734 -17.8072,-7.42762l0 0.0155906 -0.00198425 0 -0.0547087 0 0 -7.99994z"/>
+  <polygon class="fil3 str0" points="88.5946,688.271 88.5946,1618.62 1111.41,1570.12 1111.41,760.45 "/>
   <a xlink:href="menu.html" target="_top" class="rollover-link">
-  <image transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="803.142" width="229.153" height="96.8576" xlink:href="glownaimages\menu.png"/>
+  <image transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="736.142" width="229.153" height="96.8576" xlink:href="glownaimages\menu.png"/>
   </a>
   <image transform="matrix(1 0 0 1 -600 -295)" x="600" y="295" width="1200" height="605" xlink:href="glownaimages\naglowek.webp"/>
     </g>
@@ -53,11 +51,12 @@ viewBox="0 0 1200 1800"
   <a xlink:href="kontakt.html" target="_top" class="rollover-link">
   <image transform="matrix(0.804853 0 0 0.804853 441.641 -71.5852)" x="600" y="787.171" width="259.078" height="112.829" xlink:href="glownaimages\kontakt.gif"/>
  </a>
- </g>
+ <path class="fil5" d="M269.01 555.138l0.0547087 0 0.00198425 0 0 0.0155906c9.14939,0.000566929 17.4546,3.73096 23.4635,9.74013 6.00775,6.00832 9.73786,14.3121 9.739,23.4601l0.0155906 0 0 0.00425197 0 140.543 -7.99994 0 0 -140.543 0 -0.00425197 0.0155906 0c-0.000850394,-6.91852 -2.84542,-13.2225 -7.42649,-17.8038 -4.58221,-4.58249 -10.8873,-7.42734 -17.8072,-7.42762l0 0.0155906 -0.00198425 0 -0.0547087 0 0 -7.99994z"/>
+   </g>
  <g id="Warstwa_x0020_3">
   <metadata id="CorelCorpID_2Corel-Layer"/>
    <!-- Wklejasz tylko to w odpowiednie miejsce -->
-  <foreignObject x="384" y="774" width="676" height="776">
+  <foreignObject x="120" y="774" width="965" height="776">
   <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; font-size: 28pt; color: #000000; line-height: 1.3;">
     
     <!-- Styl dla nagłówków i akapitów wewnątrz -->

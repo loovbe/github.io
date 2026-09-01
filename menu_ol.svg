@@ -3,8 +3,8 @@
 <!-- Creator: CorelDRAW -->
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200px" height="1800px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 1200 1800"
-xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
   <style type="text/css">
    <![CDATA[
     .str0 {stroke:#9E9F9F;stroke-width:1.00006}
@@ -27,14 +27,18 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
   </style>
  </defs>
  
- 
- <g id="Warstwa_x0020_4">
+ <g id="Warstwa_x0020_2">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <a xlink:href="index.html" target="_top" class="rollover-link">
-  <image transform="matrix(1 0 0 1 -375.982 -387.565)" x="600" y="572.519" width="751.964" height="327.481" xlink:href="glownaimages\menu_onas.gif"/></a>
-  <a xlink:href="uslugi.html"  target="_top" class="rollover-link">
-  <image transform="matrix(1 0 0 1 -375.982 482.605)" x="600" y="572.519" width="751.964" height="327.481" xlink:href="glownaimages\menu_uslugi.gif"/></a>
+  <g id="_230654152">
   <a xlink:href="kontakt.html" target="_top" class="rollover-link">
-  <image transform="matrix(1 0 0 1 -375.982 47.5203)" x="600" y="572.519" width="751.964" height="327.481" xlink:href="glownaimages\menu_kontakt.gif"/></a>
+   <image id="_230653648" transform="matrix(1 0 0 1 -129.611 -161.833)" x="600" y="787.191" width="259.222" height="112.809" xlink:href="glownaimages\kontakt.gif"/>
+   </a>
+   <a xlink:href="uslugi.html"  target="_top" class="rollover-link">
+   <image id="_203110304" transform="matrix(1 0 0 1 -129.611 -324.176)" x="600" y="787.191" width="259.222" height="112.809" xlink:href="glownaimages\uslugi.gif"/>
+   </a>
+   <a xlink:href="index.html" target="_top" class="rollover-link">
+   <image id="_230809696" transform="matrix(1 0 0 1 -129.611 -486.518)" x="600" y="787.191" width="259.222" height="112.809" xlink:href="glownaimages\onas.gif"/>
+  </a>
+  </g>
  </g>
 </svg>
