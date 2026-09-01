@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+  <title>Loovbe - kosmetologia estetyczna</title>
+  <meta name="description" content="kosmetologia estetyczna oraz stylizacja rzęs i brwi" />
+  	
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background-color: #ded1c1;
+            background-image: url('tlo.gif');
+            background-repeat: repeat;
+        }
+        .svg-container {
+            width: 100%;
+            max-width: 1200px; /* Maksymalna szerokość na dużych ekranach */
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .svg-container object {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1200 / 1800; /* Wymusza proporcje 2:3 z viewBox pliku SVG */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="svg-container">
+        <object type="image/svg+xml" data="glownasvg.svg">
+            Twoja przeglądarka nie obsługuje formatu SVG.
+        </object>
+    </div>
+
+</body>
+</html>
