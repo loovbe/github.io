@@ -43,9 +43,9 @@ viewBox="0 0 1200 1800"
   <text x="140.244" y="1037.18"  class="fil4 fnt1">Gabinet mieści sięwewnątrz salonu fryzjerskiego </text>
   <text x="140.244" y="1081.12"  class="fil4 fnt1">Graboś Academy. </text>
   <text x="140.244" y="1125.07"  class="fil4 fnt1"></text>
-  <text x="140.244" y="1169.01"  class="fil4 fnt1">Dla klientów dostępne jest bezpłatne miejsce parkingowe</text>
-  <text x="140.244" y="1256.9"  class="fil4 fnt1">nr 20, po lewej stronie od wjazdu na osiedle</text>
-  <text x="140.244" y="1300.85"  class="fil4 fnt1"></text>
+  <text x="140.244" y="1169.01"  class="fil4 fnt1"></text>
+  <text x="140.244" y="1256.9"  class="fil4 fnt1">Dla klientów dostępne jest bezpłatne miejsce parkingowe</text>
+  <text x="140.244" y="1300.85"  class="fil4 fnt1">nr 20, po lewej stronie od wjazdu na osiedle</text>
   <text x="140.244" y="1344.79"  class="fil4 fnt1"></text>
   <a xlink:href="menu.html" target="_top" class="rollover-link">
   <image transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="736.142" width="229.153" height="96.8576" xlink:href="glownaimages\menu.png"/>
