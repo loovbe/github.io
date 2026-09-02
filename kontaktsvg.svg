@@ -45,17 +45,38 @@ viewBox="0 0 1200 1800"
   </g>
   <polygon class="fil3 str0" points="88.5946,688.271 88.5946,1618.62 1111.41,1570.12 1111.41,760.45 "/>
 <foreignObject x="120" y="774" width="965" height="776">
-  <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; font-size: 28pt; color: #000000; line-height: 1.3;">
+  <div xmlns="http://www.w3.org/1999/xhtml" class="html-tekst" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; color: #000000; line-height: 1.3;">
     
-    <!-- Styl dla nagłówków i akapitów wewnątrz -->
     <style>
-      h2 { font-size:42px; font-weight: normal; margin-top: 0; margin-bottom: 20px; color: #5C5C5B; }
-      p { font-size: clamp(2.89rem, 2.9rem, 3.1rem); margin-top: 0; margin-bottom: 25px; color: #5C5C5B; }
-	  .parking { font-size: clamp(1.8rem, 1.9rem, 2.0rem); margin-top: 0; margin-bottom: 25px; color: #5C5C5B; }
-      strong { font-weight: bold; }
+      .html-tekst {
+        font-size: 22pt;
+      }
+      h2 { 
+        font-size: 42px; 
+        font-weight: normal; 
+        margin-top: 0; 
+        margin-bottom: 20px; 
+        color: #5C5C5B; 
+      }
+      p { 
+        font-size: inherit; 
+        margin-top: 0; 
+        margin-bottom: 25px; 
+        color: #5C5C5B; 
+      }
+      strong { 
+        font-weight: bold; 
+      }
+
+      @media (max-width: 768px) {
+        .html-tekst {
+          font-size: 56px;
+        }
+      }
     </style><p><strong>Dane kontaktowe:</strong></p>
 <p>ul.Lasówka 30c/LU1, 30-718, Kraków, Podgórze </p>
-<p>Telefon: 574423600 <br />Poniedziałek - Sobota 9.00 - 20.00 <br />Niedziela 9.00- 14.00</p>
+<p>Telefon: 574423600, <a href="https://booksy.com/pl-pl/346538_loovbe_salon-kosmetyczny_8820_krakow#ba_s=seo" target="_top"><tspan fill="#0066cc" text-decoration="underline">Rezerwacje Booksy</tspan></a>
+  <br />Poniedziałek - Sobota 9.00 - 20.00 <br />Niedziela 9.00- 14.00</p>
 <p class="parking">Dla klientów dostępne jest bezpłatne miejsce parkingowe nr 20, po lewej stronie od wjazdu na osiedle.
 </p>
 	  </div>

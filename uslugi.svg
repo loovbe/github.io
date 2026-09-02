@@ -66,102 +66,123 @@ viewBox="0 0 1200 1800"
   <metadata id="CorelCorpID_2Corel-Layer"/>
    <!-- Wklejasz tylko to w odpowiednie miejsce -->
   <foreignObject x="120" y="774" width="965" height="776">
-  <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; font-size: 28pt; color: #000000; line-height: 1.3;">
+  <div xmlns="http://www.w3.org/1999/xhtml" class="html-tekst" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; color: #000000; line-height: 1.3;">
     
-    <!-- Styl dla nagłówków i akapitów wewnątrz -->
     <style>
-      h2 { font-size: 2.9rem; font-weight: bold; margin-top: 0; margin-bottom: 20px; color: #5C5C5B; }
-      p { font-size: clamp(2.9rem, 2.8rem, 3.1rem); margin-top: 0; margin-bottom: 25px; color: #5C5C5B; }
-      strong { font-weight: bold; }
+      .html-tekst {
+        font-size: 22pt;
+      }
+      h2 { 
+        font-size: 42px; 
+        font-weight: normal; 
+        margin-top: 0; 
+        margin-bottom: 20px; 
+        color: #5C5C5B; 
+      }
+      p { 
+        font-size: inherit; 
+        margin-top: 0; 
+        margin-bottom: 25px; 
+        color: #5C5C5B; 
+      }
+      strong { 
+        font-weight: bold; 
+      }
+
+      @media (max-width: 768px) {
+        .html-tekst {
+          font-size: 56px;
+        }
+      }
     </style>
 
     <!-- Zawartość tekstowa -->
      
-    <h2>Bezpłatna Konsultacja</h2><p>
-Krótka konsultacja dotycząca oferty salonu, wskazań oraz przeciwwskazań do zabiegów, a także pomoc w wyborze odpowiedniej usługi.
+    <p><strong>Bezpłatna Konsultacja</strong></p>
+<p>Krótka konsultacja dotycząca oferty salonu, wskazań oraz przeciwwskazań do zabiegów, a także pomoc w wyborze odpowiedniej usługi.
 </p>
-<h2>Konsultacja Kosmetologiczna + Analiza Skóry</h2><p>
+<p><strong>Konsultacja Kosmetologiczna + Analiza Skóry</strong></p><p>
 Konsultacja kosmetologiczna obejmująca szczegółowy wywiad, analizę skóry z wykorzystaniem urządzenia Smart Skin Analysis System Este:Med oraz indywidualny dobór terapii gabinetowych i pielęgnacji domowej.
 </p>
-<h2>Zabiegi Express</h2><p>
+<p><strong>Zabiegi Express</strong></p><p>
 Ekspresowe zabiegi pielęgnacyjne wspomagające oczyszczenie, nawilżenie, regenerację oraz poprawę kondycji skóry. Zabiegi obejmują delikatną hydrabrazję, indywidualnie dobrane serum oraz pielęgnację wykańczającą dopasowaną do potrzeb skóry.
 </p>
-<h2>Skin Balance | Regeneracja</h2>
-<h2>HydroPeel H2 | Oczyszczanie Wodorowe</h2><p>
+<p><strong>Skin Balance | Regeneracja</strong></p>
+<p><strong>HydroPeel H2 | Oczyszczanie Wodorowe</strong></p><p>
 Wieloetapowa terapia pielęgnacyjna wykorzystująca technologię aktywnego wodoru HydroPeel H2 Este:Med, wspomagająca oczyszczenie, nawilżenie oraz wsparcie kondycji skóry.
 Zabieg obejmuje twarz, szyję oraz dekolt.</p>
 
-<h2>Terapia Anti-Age</h2>
-<h2>Oczyszczanie Manualne</h2>
+<p><strong>Terapia Anti-Age</strong></p>
+<p><strong>Oczyszczanie Manualne</strong></p>
 <p>Manualne oczyszczanie skóry wspomagające redukcję zanieczyszczeń, nadmiaru sebum oraz niedoskonałości. Zabieg wykonywany jest z indywidualnie dobraną pielęgnacją wspierającą regenerację, ukojenie oraz odbudowę bariery hydrolipidowej skóry.
 </p>
-<h2>Pielęgnacja Personalizowana</h2><p>
+<p><strong>Pielęgnacja Personalizowana</strong></p><p>
 Indywidualnie dobrana pielęgnacja do aktualnych potrzeb i kondycji skóry. Zakres zabiegu, preparaty i technologie dobierane są po krótkiej konsultacji.
 </p>
-<h2>Detox</h2><p>
+<p><strong>Detox</strong></p><p>
 Intensywnie oczyszczająca i normalizująca terapia Dermomedica wspomagająca redukcję niedoskonałości, nadmiaru sebum oraz zmian trądzikowych, oparta na retinoidach dyniowych, kwasie azelainowym, migdałowym i salicylowym, niacynamidzie oraz kaolinie.
 </p>
-<h2>Sensitive Hyaluronic</h2><p>
+<p><strong>Sensitive Hyaluronic</strong></p><p>
 Terapia Dermomedica o intensywnym działaniu nawilżającym, naprawczym i kojącym, oparta na ekstrakcie ze śluzu ślimaka, beta-glukanie, witaminach C, E i B5 oraz kompozycji polisacharydów.
 </p>
-<h2>Intensive Glow</h2><p>
+<p><strong>Intensive Glow</strong></p><p>
 Intensywnie rozświetlająca i rewitalizująca terapia Dermomedica wspomagająca wyrównanie kolorytu skóry, redukcję oznak zmęczenia oraz przywrócenie naturalnego blasku, oparta na antyoksydantach, witaminie C, kwasach oraz składnikach wspierających regenerację i odnowę skóry.
 </p>
-<h2>AOX Azelaic</h2><p>
+<p><strong>AOX Azelaic</strong></p><p>
 Delikatna terapia Dermomedica o działaniu rozjaśniającym, normalizującym i przeciwzapalnym, oparta na kwasie azelainowym, witaminie C, floretinie oraz kwasie ferulowym.
 </p>
-<h2>Retinoid NoPeel</h2><p>
+<p><strong>Retinoid NoPeel</strong></p><p>
 Intensywnie stymulująca i regenerująca terapia Dermomedica wspomagająca odnowę głębszych warstw skóry, oparta na Granactive Retinoid, czynnikach wzrostu, tripeptydzie miedziowym oraz kwasie azelainowym.
 </p>
-<h2>Bright TRX</h2><p>
+<p><strong>Bright TRX</strong></p><p>
 Intensywnie rozjaśniająca i rewitalizująca terapia Dermomedica wspomagająca wyrównanie kolorytu skóry, redukcję przebarwień oraz poprawę kondycji skóry naczyniowej, oparta na kwasie traneksamowym, tetrahydrokurkumienie, wysoko stężonej witaminie C oraz kwasie ferulowym.
 </p>
-<h2>BioRePeel + Nanofrax</h2><p>
+<p><strong>BioRePeel + Nanofrax</strong></p><p>
 Zaawansowana terapia biostymulująco-regenerująca łącząca działanie peelingu BioRePeelCl3 oraz mezoterapii nanoigłowej lub mikroigłowej Nanofrax, wspomagająca intensywną przebudowę, regenerację oraz poprawę jakości skóry.
 </p>
-<h2>Mezoterapia Mikroigłowa Nanofrax</h2><p>
+<p><strong>Mezoterapia Mikroigłowa Nanofrax</strong></p><p>
 Mezoterapia mikroigłowa Nanofrax dobierana indywidualnie do potrzeb skóry. Zabieg wykonywany z wykorzystaniem technologii mikro- i nanoigłowej wspomaga regenerację skóry, poprawę jej napięcia, nawilżenia i elastyczności oraz redukcję blizn potrądzikowych, rozszerzonych porów i oznak starzenia.
 </p>
-<h2>Mezoterapia NanoSoft + NCTF 135HA</h2><p>
+<p><strong>Mezoterapia NanoSoft + NCTF 135HA</strong></p><p>
 Zaawansowana terapia mikroigłowa wykonywana z wykorzystaniem technologii NanoSoft oraz preparatu NCTF 135HA, wspomagająca intensywne nawilżenie, regenerację oraz poprawę jakości skóry.
 </p>
-<h2>Regulacja Brwi</h2><p>
+<p><strong>Regulacja Brwi</strong></p><p>
 Precyzyjna regulacja brwi wykonywana pęsetą lub delikatnym woskiem, pozwalająca nadać brwiom odpowiedni kształt oraz podkreślić naturalne rysy twarzy.
 </p>
-<h2>Koloryzacja Brwi</h2><p>
+<p><strong>Koloryzacja Brwi</strong></p><p>
 Indywidualnie dobrana koloryzacja brwi pozwalająca uzyskać naturalny i harmonijny efekt podkreślający oprawę oka. W zależności od preferencji możliwe jest zarówno subtelne podkreślenie włosków, jak i delikatny efekt odbicia koloru na skórze dla bardziej wyrazistego rezultatu.
 </p>
-<h2>Regulacja + Koloryzacja Brwi</h2><p>
+<p><strong>Regulacja + Koloryzacja Brwi</strong></p><p>
 Regulacja i koloryzacja brwi wykonywana z wykorzystaniem indywidualnie dobranego koloru oraz techniki stylizacji. Regulacja wykonywana jest pęsetą lub delikatnym woskiem w celu uzyskania estetycznego i harmonijnego kształtu brwi.
 </p>
-<h2>Rozjaśnianie + Stylizacja Brwi</h2><p>
+<p><strong>Rozjaśnianie + Stylizacja Brwi</strong></p><p>
 Kompleksowy zabieg obejmujący rozjaśnianie, regulację oraz koloryzację brwi, pozwalający uzyskać bardziej harmonijny i dopasowany do urody efekt. Terapia sprawdzi się szczególnie przy ciemnych, mocnych lub wcześniej farbowanych włoskach wymagających rozjaśnienia i wyrównania koloru.
 </p>
-<h2>Henna Pudrowa</h2><p>
+<p><strong>Henna Pudrowa</strong></p><p>
 Henna pudrowa pozwalająca uzyskać zarówno naturalny, jak i bardziej wyrazisty efekt podkreślenia brwi z odbiciem koloru na skórze. Zabieg wykonywany jest z wykorzystaniem produktów Brow Xenna oraz indywidualnie dobranego koloru i kształtu brwi. Efekt odbicia na skórze utrzymuje się dłużej niż w przypadku klasycznej koloryzacji farbką.
 </p>
-<h2>Classic Laminacja Brwi</h2><p>
+<p><strong>Classic Laminacja Brwi</strong></p><p>
 Klasyczna laminacja brwi pozwalająca ujarzmić włoski, nadać im odpowiedni kierunek oraz podkreślić naturalny kształt brwi. Zabieg daje bardziej wyrazisty i uporządkowany efekt stylizacji z mocniejszym utrwaleniem włosków, szczególnie polecany przy grubych, sztywnych i niesfornych brwiach.
 </p>
-<h2>Korean Laminacja Brwi</h2><p>
+<p><strong>Korean Laminacja Brwi</strong></p><p>
 Koreańska laminacja brwi pozwalająca uzyskać lekki, miękki i bardziej subtelny efekt stylizacji bez mocnego usztywnienia włosków. Zabieg pomaga uporządkować brwi, nadać im odpowiedni kierunek oraz optycznie zwiększyć ich objętość, zachowując elastyczność i lekkość włosków.
 </p>
-<h2>Koloryzacja Rzęs</h2><p>
+<p><strong>Koloryzacja Rzęs</strong></p><p>
 Koloryzacja rzęs pozwalająca podkreślić oprawę oka i optycznie przyciemnić włoski bez efektu codziennego makijażu. Zabieg wykonywany jest z wykorzystaniem profesjonalnych farbek dobranych indywidualnie do typu urody i oczekiwanego efektu.
 </p>
 <p>Klasyczny lifting rzęs pozwalający uzyskać efekt bardziej wyrazistych, podkręconych i uniesionych rzęs. Zabieg szczególnie polecany dla osób posiadających proste, sztywne lub trudniejsze do podkręcenia rzęsy oraz preferujących mocniejsze podkreślenie spojrzenia.
 </p>
-<h2>Korean Lifting Rzęs</h2><p>
+<p><strong>Korean Lifting Rzęs</strong></p><p>
 Koreański lifting rzęs pozwalający uzyskać efekt lekko uniesionych, miękkich i subtelnie podkreślonych rzęs. Zabieg sprawdzi się szczególnie u osób preferujących bardziej naturalny i delikatny efekt stylizacji spojrzenia.
 </p>
-<h2>Przedłużanie Rzęs</h2><p>
+<p><strong>Przedłużanie Rzęs</strong></p><p>
 Przedłużanie rzęs wykonywane z indywidualnym doborem stylizacji do kształtu oka, urody oraz oczekiwań. W ofercie dostępne są stylizacje klasyczne 1:1, lekkie i średnie objętości oraz stylizacje z dodatkowymi efektami.
 </p>
-<h2>Stylizacje Awangardowe</h2>
-<h2>Usunięcie Przedłużonych Rzęs</h2><p>
+<p><strong>Stylizacje Awangardowe</strong></p>
+<p><strong>Usunięcie Przedłużonych Rzęs</strong></p><p>
 Bezpieczne i delikatne usunięcie stylizacji rzęs wykonanej w innym salonie.
 </p>
-<h2>Brwi</h2><p>
+<p><strong>Brwi</strong></p><p>
 Delikatna depilacja twarzy wykonywana woskiem Safewax przeznaczonym do skóry wrażliwej, zapewniająca skuteczne i bardziej komfortowe usunięcie niechcianego owłosienia.
 </p>
 
