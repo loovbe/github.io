@@ -74,7 +74,7 @@ viewBox="0 0 1200 1800"
         }
       }
     </style><p><strong>Dane kontaktowe:</strong></p>
-<p>ul.Lasówka 30c/LU1, <br />30-718, Kraków, <br />Telefon: 574423600, <a href="https://booksy.com/pl-pl/346538_loovbe_salon-kosmetyczny_8820_krakow#ba_s=seo" target="_top"><tspan fill="#0066cc" text-decoration="underline">Rezerwacje Booksy</tspan></a>
+<p style="position: relative; z-index: 10;">ul. Lasówka 30c/LU1, <br />30-718, Kraków, <br />Telefon: 574423600, <a href="https://booksy.com/pl-pl/346538_loovbe_salon-kosmetyczny_8820_krakow#ba_s=seo" target="_top"><span style="color: #0066cc; text-decoration: underline;">Rezerwacje Booksy</span></a>
   <br />Poniedziałek - Sobota 9.00 - 20.00 <br />Niedziela 9.00- 14.00<br /></p>
 <p class="parking">Dla klientów dostępne jest bezpłatne miejsce parkingowe nr 20, po lewej stronie od wjazdu na osiedle.
 </p>
@@ -98,7 +98,7 @@ viewBox="0 0 1200 1800"
  </a>
  <path class="fil5" d="M269.01 555.138l0.0547087 0 0.00198425 0 0 0.0155906c9.14939,0.000566929 17.4546,3.73096 23.4635,9.74013 6.00775,6.00832 9.73786,14.3121 9.739,23.4601l0.0155906 0 0 0.00425197 0 140.543 -7.99994 0 0 -140.543 0 -0.00425197 0.0155906 0c-0.000850394,-6.91852 -2.84542,-13.2225 -7.42649,-17.8038 -4.58221,-4.58249 -10.8873,-7.42734 -17.8072,-7.42762l0 0.0155906 -0.00198425 0 -0.0547087 0 0 -7.99994z"/>
   </g>
- <g id="Warstwa_x0020_3">
+ <g id="Warstwa_x0020_3" style="pointer-events: none;">
   <metadata id="CorelCorpID_2Corel-Layer"/>
   <image transform="matrix(1 0 0 1 -217.371 678.796)" x="354.244" y="76.09" width="1506.7" height="290.91" xlink:href="glownaimages\parking.png"/>
  </g>
