@@ -24,6 +24,15 @@ viewBox="0 0 1200 1800"
     .rollover-link:hover {
       filter: invert(1) grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(400%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
+   /* Styl ukrywający element na ekranach od 768px wzwyż (tablety i komputery) */
+    .tylko-mobilne {
+      display: inline;
+    }
+    @media (min-width: 768px) {
+      .tylko-mobilne {
+        display: none;
+      }
+    }
    ]]>
   </style>
  </defs>
@@ -36,7 +45,7 @@ viewBox="0 0 1200 1800"
   </g>
   <polygon class="fil3 str0" points="88.5946,688.271 88.5946,1618.62 1111.41,1570.12 1111.41,760.45 "/>
   <a xlink:href="menu.html" target="_top" class="rollover-link">
-  <image transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="736.142" width="229.153" height="96.8576" xlink:href="glownaimages\menu.png"/>
+  <image class="tylko-mobilne" transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="736.142" width="229.153" height="96.8576" href="glownaimages/menu.png"/>
   </a>
   <image transform="matrix(1 0 0 1 -600 -295)" x="600" y="295" width="1200" height="605" xlink:href="glownaimages\naglowek.webp"/>
     </g>
@@ -61,8 +70,8 @@ viewBox="0 0 1200 1800"
     
     <!-- Styl dla nagłówków i akapitów wewnątrz -->
     <style>
-      h2 { font-size: 34pt; font-weight: bold; margin-top: 0; margin-bottom: 20px; color: #5C5C5B; }
-      p { margin-top: 0; margin-bottom: 25px; color: #5C5C5B; }
+      h2 { font-size: 2.9rem; font-weight: bold; margin-top: 0; margin-bottom: 20px; color: #5C5C5B; }
+      p { font-size: clamp(2.9rem, 2.8rem, 3.1rem); margin-top: 0; margin-bottom: 25px; color: #5C5C5B; }
       strong { font-weight: bold; }
     </style>
 

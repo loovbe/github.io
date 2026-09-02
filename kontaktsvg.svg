@@ -24,6 +24,15 @@ viewBox="0 0 1200 1800"
     .rollover-link:hover {
       filter: invert(1) grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(400%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
+	/* Styl ukrywający element na ekranach od 768px wzwyż (tablety i komputery) */
+    .tylko-mobilne {
+      display: inline;
+    }
+    @media (min-width: 768px) {
+      .tylko-mobilne {
+        display: none;
+      }
+    }
    ]]>
   </style>
  </defs>
@@ -35,21 +44,24 @@ viewBox="0 0 1200 1800"
    <rect id="_229758416" class="fil2" transform="matrix(2.27419E-014 0.831168 -0.858687 0.169924 1131.65 744.813)" width="63.754" height="100.881"/>
   </g>
   <polygon class="fil3 str0" points="88.5946,688.271 88.5946,1618.62 1111.41,1570.12 1111.41,760.45 "/>
-  <text x="140.244" y="773.516"  class="fil4 fnt0">KONTAKT</text>
-  <text x="140.244" y="817.46"  class="fil4 fnt1">Lasówka 30c/LU1, 30-718, Kraków, Podgórze, </text>
-  <text x="140.244" y="861.404"  class="fil4 fnt1"></text>
-  <text x="140.244" y="905.348"  class="fil4 fnt1"><tspan font-weight="bold">Telefon:</tspan> 574423600 </text>
-  <text x="140.244" y="949.293"  class="fil4 fnt1"></text>
-  <text x="140.244" y="993.237"  class="fil4 fnt1"><tspan font-weight="bold">Otwarte: Poniedziałek - Sobota</tspan> 9.00-20.00 </text>
-  <text x="140.244" y="1037.18"  class="fil4 fnt1"><tspan font-weight="bold">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Niedziela:</tspan> 9.00-14.00 </text>
-  <text x="140.244" y="1081.12"  class="fil4 fnt1"></text>
-  <text x="140.244" y="1125.07"  class="fil4 fnt1"><a href="https://booksy.com/pl-pl/346538_loovbe_salon-kosmetyczny_8820_krakow#ba_s=seo" target="_top"><tspan fill="#0066cc" text-decoration="underline">Booksy</tspan></a></text>
-  <text x="140.244" y="1190.01"  class="fil4 fnt3">Dla klientów dostępne jest bezpłatne miejsce </text>
-  <text x="140.244" y="1220.9"  class="fil4 fnt3">parkingowe nr 20, po lewej stronie od wjazdu na osiedle. </text>
-  <text x="140.244" y="1300.85"  class="fil4 fnt3"> </text>
-  <text x="140.244" y="1344.79"  class="fil4 fnt3"></text>
+<foreignObject x="120" y="774" width="965" height="776">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; font-size: 28pt; color: #000000; line-height: 1.3;">
+    
+    <!-- Styl dla nagłówków i akapitów wewnątrz -->
+    <style>
+      h2 { font-size:42px; font-weight: normal; margin-top: 0; margin-bottom: 20px; color: #5C5C5B; }
+      p { font-size: clamp(2.89rem, 2.9rem, 3.1rem); margin-top: 0; margin-bottom: 25px; color: #5C5C5B; }
+	  .parking { font-size: clamp(1.8rem, 1.9rem, 2.0rem); margin-top: 0; margin-bottom: 25px; color: #5C5C5B; }
+      strong { font-weight: bold; }
+    </style><p><strong>Dane kontaktowe:</strong></p>
+<p>ul.Lasówka 30c/LU1, 30-718, Kraków, Podgórze </p>
+<p>Telefon: 574423600 <br />Poniedziałek - Sobota 9.00 - 20.00 <br />Niedziela 9.00- 14.00</p>
+<p class="parking">Dla klientów dostępne jest bezpłatne miejsce parkingowe nr 20, po lewej stronie od wjazdu na osiedle.
+</p>
+	  </div>
+</foreignObject>
   <a xlink:href="menu.html" target="_top" class="rollover-link">
-  <image transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="736.142" width="229.153" height="96.8576" xlink:href="glownaimages\menu.png"/>
+  <image class="tylko-mobilne"  transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="736.142" width="229.153" height="96.8576" href="glownaimages/menu.png"/>
   </a>
   <image transform="matrix(1 0 0 1 -600 -295)" x="600" y="295" width="1200" height="605" xlink:href="glownaimages\naglowek.webp"/>
     </g>
@@ -68,6 +80,6 @@ viewBox="0 0 1200 1800"
   </g>
  <g id="Warstwa_x0020_3">
   <metadata id="CorelCorpID_2Corel-Layer"/>
-  <image transform="matrix(1 0 0 1 -217.371 678.796)" x="354.244" y="570.09" width="306.7" height="314.91" xlink:href="glownaimages\parking.png"/>
+  <image transform="matrix(1 0 0 1 -217.371 678.796)" x="354.244" y="588.09" width="306.7" height="314.91" xlink:href="glownaimages\parking.png"/>
  </g>
 </svg>
