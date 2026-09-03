@@ -44,7 +44,7 @@ viewBox="0 0 1200 1800"
    <rect id="_229758416" class="fil2" transform="matrix(2.27419E-014 0.831168 -0.858687 0.169924 1131.65 744.813)" width="63.754" height="100.881"/>
   </g>
   <polygon class="fil3 str0" points="88.5946,688.271 88.5946,1618.62 1111.41,1570.12 1111.41,760.45 "/>
-<foreignObject x="120" y="774" width="965" height="776">
+<foreignObject x="120" y="774" width="500" height="776">
   <div xmlns="http://www.w3.org/1999/xhtml" class="html-tekst" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; color: #000000; line-height: 1.3;">
     
     <style>
@@ -74,8 +74,8 @@ viewBox="0 0 1200 1800"
         }
       }
     </style><p><strong>Dane kontaktowe:</strong></p>
-<p style="position: relative; z-index: 10;">ul. Lasówka 30c/LU1, <br />30-718, Kraków, <br />Telefon: 574423600, <a href="https://booksy.com/pl-pl/346538_loovbe_salon-kosmetyczny_8820_krakow#ba_s=seo" target="_top"><span style="color: #0066cc; text-decoration: underline;">Rezerwacje Booksy</span></a>
-  <br />Poniedziałek - Sobota 9.00 - 20.00 <br />Niedziela 9.00- 14.00<br /></p>
+<p style="position: relative; z-index: 10;">ul. Lasówka 30c/LU1 <br />30-718, Kraków <br />Telefon: 574423600,<br /><a href="https://booksy.com/pl-pl/346538_loovbe_salon-kosmetyczny_8820_krakow#ba_s=seo" target="_top"><span style="color: #0066cc; text-decoration: underline;">Rezerwacje Booksy</span></a>
+  <br />pon. – sob. 9.00-20.00 <br />niedz. 9.00-14.00<br /></p>
 <p class="parking">Dla klientów dostępne jest bezpłatne miejsce parkingowe nr 20, po lewej stronie od wjazdu na osiedle.
 </p>
 	  </div>
@@ -102,4 +102,9 @@ viewBox="0 0 1200 1800"
   <metadata id="CorelCorpID_2Corel-Layer"/>
   <image transform="matrix(1 0 0 1 -217.371 678.796)" x="354.244" y="76.09" width="1506.7" height="290.91" xlink:href="glownaimages\parking.png"/>
  </g>
+ <g id="Warstwa_x0020_4" style="pointer-events: none;">
+ <a xlink:href="uslugi.html" target="_top" >
+  <metadata id="CorelCorpID_2Corel-Layer"/>
+    <image transform="matrix(1 0 0 1 -217.371 678.796)" x="354.244" y="470.09" width="1506.7" height="290.91" xlink:href="glownaimages\mapa.gif"/>
+ </a></g>
 </svg>
