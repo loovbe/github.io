@@ -7,30 +7,31 @@ viewBox="0 0 1200 1800"
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str0 {stroke:#9E9F9F;stroke-width:1.00006}
+    .str0 {stroke:#D79F61;stroke-width:1.00006}
     .fil4 {fill:#5C5C5B}
     .fil3 {fill:white}
-    .fil1 {fill:#27B1E5}
-    .fil2 {fill:#4065AB}
-    .fil0 {fill:#DE1380}
-    .fil5 {fill:#DE1380;fill-rule:nonzero}
-    .fnt1 {font-weight:normal;font-size: 28pt;font-family:'Calibri'}
-    .fnt0 {font-weight:bold;font-size:clamp(2.5rem, 2vw + 0.8rem, 4.5rem);font-family:'Calibri'}
+    .fil1 {fill:#D79F61}
+    .fil2 {fill:#5F91A0}
+    .fil0 {fill:#DFB996}
+    .fil5 {fill:#5F91A0;fill-rule:nonzero}
+	.fnt3 {font-weight:normal;font-size:20pt;font-family:'Calibri'}
+    .fnt1 {font-weight:normal;font-size:28pt;font-family:'Calibri'}
+    .fnt0 {font-weight:bold;font-size:28pt;font-family:'Calibri'}
 	 .rollover-link {
-      transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease; filter 0.3s ease;
       opacity: 1;
+	  filter: invert(1) grayscale(100%) sepia(100%) hue-rotate(170deg) saturate(340%) brightness(80%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
     .rollover-link:hover {
-      filter: invert(1) grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(400%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
+      filter: invert(1) grayscale(90%) sepia(80%) hue-rotate(180deg) saturate(400%) brightness(100%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
-	/* Styl ukrywający element na ekranach od 768px wzwyż (tablety i komputery) */
+   /* Styl ukrywający element na ekranach od 768px wzwyż (tablety i komputery) */
     .tylko-mobilne {
       display: inline;
     }
     @media (min-width: 768px) {
       .tylko-mobilne {
         display: none;
-      }
     }
    ]]>
   </style>
@@ -48,36 +49,62 @@ viewBox="0 0 1200 1800"
   <image class="tylko-mobilne" transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="736.142" width="229.153" height="96.8576" href="glownaimages/menu.png"/></a>
   <image transform="matrix(1 0 0 1 -600 -295)" x="600" y="295" width="1200" height="605" xlink:href="glownaimages/naglowek.webp"/>
     </g>
-	<foreignObject x="120" y="774" width="965" height="776">
-  <div xmlns="http://www.w3.org/1999/xhtml" class="html-tekst" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; color: #000000; line-height: 1.3;">
-    
-    <style>
-      .html-tekst {
-        font-size: 22pt;
-      }
-      h2 { 
-        font-size: 42px; 
-        font-weight: normal; 
-        margin-top: 0; 
-        margin-bottom: 20px; 
-        color: #5C5C5B; 
-      }
-      p { 
-        font-size: inherit; 
-        margin-top: 0; 
-        margin-bottom: 25px; 
-        color: #5C5C5B; 
-      }
-      strong { 
-        font-weight: bold; 
-      }
+	  <foreignObject x="120" y="774" width="965" height="776">
 
-      @media (max-width: 768px) {
-        .html-tekst {
-          font-size: 56px;
-        }
+  <style>
+    .html-tekst {
+  font-size: 22pt;
+  scrollbar-color: #D8C8B8 #F4EEE8;
+  scrollbar-width: auto;
+}
+
+.html-tekst::-webkit-scrollbar {
+  width: 12px;
+}
+
+.html-tekst::-webkit-scrollbar-track {
+  background: #F4EEE8;
+}
+
+.html-tekst::-webkit-scrollbar-thumb {
+  background: #D8C8B8;
+  border-radius: 6px;
+}
+
+    .html-tekst::-webkit-scrollbar-thumb:hover {
+      background: #B89563;
+    }
+
+    h2 { 
+      font-size: 42px; 
+      font-weight: normal; 
+      margin-top: 0; 
+      margin-bottom: 20px; 
+      color: #5C5C5B; 
+    }
+
+    p { 
+      font-size: inherit; 
+      margin-top: 0; 
+      margin-bottom: 25px; 
+      color: #5C5C5B; 
+    }
+
+    strong { 
+      font-weight: bold; 
+    }
+
+    @media (max-width: 768px) {
+      .html-tekst {
+        font-size: 56px;
       }
-    </style><p><strong>O NAS</strong></p>
+    }
+  </style>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"
+       class="html-tekst"
+       style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; color: #000000; line-height: 1.3;">
+<p><strong>O NAS</strong></p>
 <p>Loovbe to kameralna przestrzeń beauty oferująca zabiegi
 pielęgnacyjne, kosmetologii estetycznej oraz
 stylizacji rzęs i brwi. Miejsce stworzone z myślą

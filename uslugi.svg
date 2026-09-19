@@ -2,27 +2,28 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator -->
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 1200 1800"
+viewBox="0 0 1200 2400"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str0 {stroke:#9E9F9F;stroke-width:1.00006}
+    .str0 {stroke:#D79F61;stroke-width:1.00006}
     .fil4 {fill:#5C5C5B}
     .fil3 {fill:white}
-    .fil1 {fill:#27B1E5}
-    .fil2 {fill:#4065AB}
-    .fil0 {fill:#DE1380}
-    .fil5 {fill:#DE1380;fill-rule:nonzero}
+    .fil1 {fill:#D79F61}
+    .fil2 {fill:#5F91A0}
+    .fil0 {fill:#DFB996}
+    .fil5 {fill:#5F91A0;fill-rule:nonzero}
 	.fnt3 {font-weight:normal;font-size:20pt;font-family:'Calibri'}
     .fnt1 {font-weight:normal;font-size:28pt;font-family:'Calibri'}
     .fnt0 {font-weight:bold;font-size:28pt;font-family:'Calibri'}
 	 .rollover-link {
-      transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease; filter 0.3s ease;
       opacity: 1;
+	  filter: invert(1) grayscale(100%) sepia(100%) hue-rotate(170deg) saturate(340%) brightness(80%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
     .rollover-link:hover {
-      filter: invert(1) grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(400%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
+      filter: invert(1) grayscale(90%) sepia(80%) hue-rotate(180deg) saturate(400%) brightness(100%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
    /* Styl ukrywający element na ekranach od 768px wzwyż (tablety i komputery) */
     .tylko-mobilne {
@@ -31,7 +32,6 @@ viewBox="0 0 1200 1800"
     @media (min-width: 768px) {
       .tylko-mobilne {
         display: none;
-      }
     }
    ]]>
   </style>
@@ -42,8 +42,8 @@ viewBox="0 0 1200 1800"
    <rect id="_229758464" class="fil0" transform="matrix(2.27419E-014 0.831168 -0.858687 -0.219838 1131.65 744.813)" width="63.754" height="100.881"/>
    <rect id="_229758368" class="fil1" transform="matrix(2.27419E-014 0.831168 -0.96722 -0.219838 1142.59 784.087)" width="63.754" height="100.881"/>
    <rect id="_229758416" class="fil2" transform="matrix(2.27419E-014 0.831168 -0.858687 0.169924 1131.65 744.813)" width="63.754" height="100.881"/>
-  </g>
-  <polygon class="fil3 str0" points="88.5946,688.271 88.5946,1618.62 1111.41,1570.12 1111.41,760.45 "/>
+  </g>                               
+  <polygon class="fil3 str0" points="88.5946,690.468 88.5946,2275.62 1111.41,2227.12 1111.41,762.647 "/>
   <a xlink:href="menu.html" target="_top" class="rollover-link">
   <image class="tylko-mobilne" transform="matrix(1 0 0 1 -557.439 -147.2)" x="600" y="736.142" width="229.153" height="96.8576" href="glownaimages/menu.png"/>
   </a>
@@ -65,36 +65,61 @@ viewBox="0 0 1200 1800"
  <g id="Warstwa_x0020_3">
   <metadata id="ClCorpID_2Cl-Layer"/>
    <!-- Wklejasz tylko to w odpowiednie miejsce -->
-  <foreignObject x="120" y="774" width="965" height="776">
-  <div xmlns="http://www.w3.org/1999/xhtml" class="html-tekst" style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; color: #000000; line-height: 1.3;">
-    
-    <style>
-      .html-tekst {
-        font-size: 22pt;
-      }
-      h2 { 
-        font-size: 42px; 
-        font-weight: normal; 
-        margin-top: 0; 
-        margin-bottom: 20px; 
-        color: #5C5C5B; 
-      }
-      p { 
-        font-size: inherit; 
-        margin-top: 0; 
-        margin-bottom: 25px; 
-        color: #5C5C5B; 
-      }
-      strong { 
-        font-weight: bold; 
-      }
+  <foreignObject x="120" y="774" width="965" height="1400">
 
-      @media (max-width: 768px) {
-        .html-tekst {
-          font-size: 56px;
-        }
+  <style>
+    .html-tekst {
+  font-size: 22pt;
+  scrollbar-color: #D8C8B8 #F4EEE8;
+  scrollbar-width: auto;
+}
+
+.html-tekst::-webkit-scrollbar {
+  width: 12px;
+}
+
+.html-tekst::-webkit-scrollbar-track {
+  background: #F4EEE8;
+}
+
+.html-tekst::-webkit-scrollbar-thumb {
+  background: #D8C8B8;
+  border-radius: 6px;
+}
+
+    .html-tekst::-webkit-scrollbar-thumb:hover {
+      background: #B89563;
+    }
+
+    h2 { 
+      font-size: 42px; 
+      font-weight: normal; 
+      margin-top: 0; 
+      margin-bottom: 20px; 
+      color: #5C5C5B; 
+    }
+
+    p { 
+      font-size: inherit; 
+      margin-top: 0; 
+      margin-bottom: 25px; 
+      color: #5C5C5B; 
+    }
+
+    strong { 
+      font-weight: bold; 
+    }
+
+    @media (max-width: 768px) {
+      .html-tekst {
+        font-size: 56px;
       }
-    </style>
+    }
+  </style>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"
+       class="html-tekst"
+       style="width: 100%; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 20px; font-family: 'Calibri', Arial, sans-serif; color: #000000; line-height: 1.3;">
 
     <!-- Zawartość tekstowa -->
      
