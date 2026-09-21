@@ -1,0 +1,1020 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Galeria</title>
+
+
+<style>
+
+/* =====================================================
+   CAŁA STRONA
+   ===================================================== */
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100%;
+
+    background: #DFB996;
+	background-image: url('tlo.gif');
+    background-repeat: repeat;
+
+}
+
+body {
+
+    text-align: center;
+
+}
+
+
+/* =====================================================
+   GŁÓWNY KONTENER
+   ===================================================== */
+
+.galeria-page {
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    background: #DFB996;
+	background-image: url('tlo.gif');
+    background-repeat: repeat;
+
+}
+
+
+/* =====================================================
+   GALERIA
+   ===================================================== */
+
+.galeria {
+
+    position: relative;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background: #DFB996;
+	background-image: url('tlo.gif');
+    background-repeat: repeat;
+
+    line-height: 0;
+
+    text-align: center;
+
+}
+
+
+/* =====================================================
+   ZDJĘCIE
+   ===================================================== */
+
+#zdjecie {
+
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+    padding: 0;
+
+    user-select: none;
+
+    -webkit-user-drag: none;
+
+}
+
+
+/* =====================================================
+   STRZAŁKI
+   ===================================================== */
+
+.strzalka {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 60px;
+    height: 90px;
+
+    padding: 0;
+
+    border: none;
+
+    background: rgba(255,255,255,0.65);
+
+    color: #5C5C5B;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 55px;
+
+    line-height: 80px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.strzalka:hover {
+
+    background: rgba(255,255,255,0.9);
+
+    color: #B89563;
+
+}
+
+
+#poprzednie {
+
+    left: 10px;
+
+}
+
+
+#nastepne {
+
+    right: 10px;
+
+}
+
+
+/* =====================================================
+   LICZNIK
+   ===================================================== */
+
+.licznik {
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 12px;
+
+    transform: translateX(-50%);
+
+    padding: 5px 12px;
+
+    background: rgba(255,255,255,0.75);
+
+    color: #5C5C5B;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: normal;
+
+    z-index: 10;
+
+}
+
+
+/* =====================================================
+   NAWIGACJA
+   ===================================================== */
+
+.nawigacja {
+
+    width: 100%;
+
+    height: 113px;
+
+    margin: 0;
+    padding: 0;
+
+    background: #DFB996;
+	background-image: url('tlo.gif');
+    background-repeat: repeat;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    line-height: 0;
+
+}
+
+
+/* =====================================================
+   CZTERY GIF-Y – DESKTOP
+   ===================================================== */
+
+.nawigacja-desktop {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 35px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   LINKI
+   ===================================================== */
+
+.nawigacja-desktop a {
+
+    display: block;
+
+    width: 190px;
+
+    flex: 0 0 210px;
+
+    line-height: 0;
+
+}
+
+
+/* =====================================================
+   GIF-Y
+   ===================================================== */
+
+.nawigacja-desktop img {
+
+    display: block;
+
+    width: 190px;
+
+    height: auto;
+
+    max-width: 100%;
+
+    /*
+     * Próba optycznego usunięcia białego tła GIF-a.
+     */
+
+    
+
+}
+
+
+/* =====================================================
+   ROLLOVER
+   ===================================================== */
+
+.rollover-link {
+
+    transition:
+        opacity 0.3s ease,
+        filter 0.3s ease;
+
+    opacity: 1;
+
+    filter:
+	     saturate(120%)
+		 sepia(40%)
+		 brightness(80%)
+        ;
+
+}
+
+
+.rollover-link:hover {
+
+    filter:
+        invert(1)
+        grayscale(90%)
+        sepia(80%)
+        hue-rotate(180deg)
+        saturate(400%)
+        brightness(100%)
+        invert(1);
+
+}
+
+
+/* =====================================================
+   MENU MOBILNE
+   ===================================================== */
+
+.menu-mobilne {
+
+    display: none;
+
+}
+
+
+.menu-mobilne img {
+
+    display: block;
+
+    width: 180px;
+
+    height: auto;
+
+}
+
+
+/* =====================================================
+   TELEFON
+   ===================================================== */
+
+@media (max-width: 767px) {
+
+
+    /* -----------------------------------------------
+       GALERIA
+       ----------------------------------------------- */
+
+    .galeria {
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: 0;
+
+    }
+
+
+    /* -----------------------------------------------
+       ZDJĘCIE
+       ----------------------------------------------- */
+
+    #zdjecie {
+
+        max-width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+
+    /* -----------------------------------------------
+       STRZAŁKI
+       ----------------------------------------------- */
+
+    .strzalka {
+
+        width: 45px;
+
+        height: 70px;
+
+        font-size: 40px;
+
+        line-height: 60px;
+
+        background:
+            rgba(255,255,255,0.55);
+
+    }
+
+
+    #poprzednie {
+
+        left: 3px;
+
+    }
+
+
+    #nastepne {
+
+        right: 3px;
+
+    }
+
+
+    /* -----------------------------------------------
+       LICZNIK
+       ----------------------------------------------- */
+
+    .licznik {
+
+        bottom: 8px;
+
+        font-size: 14px;
+
+        padding: 4px 9px;
+
+    }
+
+
+    /* -----------------------------------------------
+       UKRYWAMY DESKTOP
+       ----------------------------------------------- */
+
+    .nawigacja-desktop {
+
+        display: none;
+
+    }
+
+
+    /* -----------------------------------------------
+       NAWIGACJA MOBILNA
+       ----------------------------------------------- */
+
+    .nawigacja {
+
+        width: 100%;
+
+        height: 97px;
+
+        background: #DFB996;
+
+    }
+
+
+    .menu-mobilne {
+
+        width: 100%;
+
+        height: 97px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin: 0;
+        padding: 0;
+
+        line-height: 0;
+
+    }
+
+
+    .menu-mobilne img {
+
+        width: 180px;
+
+        height: auto;
+
+    }
+
+}
+
+
+/* =====================================================
+   BARDZO MAŁY TELEFON
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    .strzalka {
+
+        width: 40px;
+
+        height: 60px;
+
+        font-size: 35px;
+
+    }
+
+
+    .menu-mobilne img {
+
+        width: 165px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="galeria-page">
+
+
+<!-- ===================================================
+     GALERIA
+     =================================================== -->
+
+<div class="galeria">
+
+
+    <button
+        id="poprzednie"
+        class="strzalka"
+        aria-label="Poprzednie zdjęcie">
+
+        ‹
+
+    </button>
+
+
+    <img
+        id="zdjecie"
+        src=""
+        alt="Zdjęcie galerii">
+
+
+    <button
+        id="nastepne"
+        class="strzalka"
+        aria-label="Następne zdjęcie">
+
+        ›
+
+    </button>
+
+
+    <div
+        id="licznik"
+        class="licznik">
+
+        1 / 1
+
+    </div>
+
+
+</div>
+
+
+<!-- ===================================================
+     NAWIGACJA
+     =================================================== -->
+
+<div class="nawigacja">
+
+
+    <!-- ===============================================
+         DESKTOP
+         =============================================== -->
+
+    <div class="nawigacja-desktop">
+
+
+        <!-- O NAS -->
+
+        <a
+            href="index.html"
+            target="_top"
+            class="rollover-link">
+
+            <img
+                src="glownaimages/onas.gif"
+                alt="O nas">
+
+        </a>
+
+
+        <!-- USŁUGI -->
+
+        <a
+            href="uslugi.html"
+            target="_top"
+            class="rollover-link">
+
+            <img
+                src="glownaimages/uslugi.gif"
+                alt="Usługi">
+
+        </a>
+
+
+        <!-- GALERIA -->
+
+        <a
+            href="galeria.html"
+            target="_top"
+            class="rollover-link">
+
+            <img
+                src="glownaimages/galeria.gif"
+                alt="Galeria">
+
+        </a>
+
+
+        <!-- KONTAKT -->
+
+        <a
+            href="kontakt.html"
+            target="_top"
+            class="rollover-link">
+
+            <img
+                src="glownaimages/kontakt.gif"
+                alt="Kontakt">
+
+        </a>
+
+
+    </div>
+
+
+    <!-- ===============================================
+         MENU MOBILNE
+         =============================================== -->
+
+    <a
+        href="menu.html"
+        target="_top"
+        class="menu-mobilne rollover-link">
+
+        <img
+            src="glownaimages/menu.png"
+            alt="Menu">
+
+    </a>
+
+
+</div>
+
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   ZDJĘCIA
+   ===================================================== */
+
+const zdjecia = [
+
+    "glownaimages/galeria/01.jpg",
+    "glownaimages/galeria/02.jpg",
+    "glownaimages/galeria/03.jpg",
+    "glownaimages/galeria/04.jpg",
+    "glownaimages/galeria/05.jpg"
+
+];
+
+
+/* =====================================================
+   ELEMENTY
+   ===================================================== */
+
+const obraz =
+    document.getElementById("zdjecie");
+
+const licznik =
+    document.getElementById("licznik");
+
+const poprzednie =
+    document.getElementById("poprzednie");
+
+const nastepne =
+    document.getElementById("nastepne");
+
+
+/* =====================================================
+   NUMER ZDJĘCIA
+   ===================================================== */
+
+let numer = 0;
+
+
+/* =====================================================
+   DOPASOWANIE ZDJĘCIA
+   ===================================================== */
+
+function dopasujZdjecie() {
+
+
+    /* -----------------------------------------------
+       DESKTOP
+       ----------------------------------------------- */
+
+    if (window.innerWidth > 767) {
+
+        obraz.style.width = "auto";
+
+        obraz.style.height = "auto";
+
+        obraz.style.maxWidth = "100%";
+
+        obraz.style.maxHeight =
+            "calc(100vh - 150px)";
+
+        return;
+
+    }
+
+
+    /* -----------------------------------------------
+       TELEFON
+       ----------------------------------------------- */
+
+    const wysokoscMenu = 97;
+
+
+    const dostepnaWysokosc =
+        window.innerHeight -
+        wysokoscMenu;
+
+
+    if (obraz.naturalHeight > 0) {
+
+
+        const naturalnaSzerokosc =
+            obraz.naturalWidth;
+
+
+        const naturalnaWysokosc =
+            obraz.naturalHeight;
+
+
+        const szerokoscEkranu =
+            window.innerWidth;
+
+
+        const wysokoscPoSzerokosci =
+            naturalnaWysokosc *
+            (szerokoscEkranu /
+             naturalnaSzerokosc);
+
+
+        if (
+            wysokoscPoSzerokosci >
+            dostepnaWysokosc
+        ) {
+
+
+            /*
+             * Zdjęcie za wysokie.
+             */
+
+            obraz.style.height =
+                dostepnaWysokosc + "px";
+
+            obraz.style.width =
+                "auto";
+
+        }
+        else {
+
+
+            /*
+             * Zdjęcie mieści się w szerokości.
+             */
+
+            obraz.style.width =
+                "100%";
+
+            obraz.style.height =
+                "auto";
+
+        }
+
+    }
+
+}
+
+
+/* =====================================================
+   POKAŻ ZDJĘCIE
+   ===================================================== */
+
+function pokazZdjecie() {
+
+
+    if (zdjecia.length === 0) {
+
+        return;
+
+    }
+
+
+    obraz.src =
+        zdjecia[numer];
+
+
+    licznik.textContent =
+        (numer + 1) +
+        " / " +
+        zdjecia.length;
+
+
+    if (obraz.complete) {
+
+        dopasujZdjecie();
+
+    }
+
+}
+
+
+/* =====================================================
+   PO ZAŁADOWANIU
+   ===================================================== */
+
+obraz.addEventListener(
+    "load",
+    function() {
+
+        dopasujZdjecie();
+
+    }
+);
+
+
+/* =====================================================
+   NASTĘPNE
+   ===================================================== */
+
+nastepne.addEventListener(
+    "click",
+    function() {
+
+        numer++;
+
+
+        if (numer >= zdjecia.length) {
+
+            numer = 0;
+
+        }
+
+
+        pokazZdjecie();
+
+    }
+);
+
+
+/* =====================================================
+   POPRZEDNIE
+   ===================================================== */
+
+poprzednie.addEventListener(
+    "click",
+    function() {
+
+        numer--;
+
+
+        if (numer < 0) {
+
+            numer =
+                zdjecia.length - 1;
+
+        }
+
+
+        pokazZdjecie();
+
+    }
+);
+
+
+/* =====================================================
+   KLAWIATURA
+   ===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+
+        if (event.key === "ArrowRight") {
+
+            nastepne.click();
+
+        }
+
+
+        if (event.key === "ArrowLeft") {
+
+            poprzednie.click();
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   SWIPE
+   ===================================================== */
+
+let poczatekX = 0;
+let poczatekY = 0;
+
+
+obraz.addEventListener(
+    "touchstart",
+    function(event) {
+
+        poczatekX =
+            event.touches[0].clientX;
+
+        poczatekY =
+            event.touches[0].clientY;
+
+    },
+    { passive: true }
+);
+
+
+obraz.addEventListener(
+    "touchend",
+    function(event) {
+
+
+        const koniecX =
+            event.changedTouches[0].clientX;
+
+
+        const koniecY =
+            event.changedTouches[0].clientY;
+
+
+        const roznicaX =
+            koniecX - poczatekX;
+
+
+        const roznicaY =
+            koniecY - poczatekY;
+
+
+        if (
+
+            Math.abs(roznicaX) > 50 &&
+
+            Math.abs(roznicaX) >
+            Math.abs(roznicaY)
+
+        ) {
+
+
+            if (roznicaX < 0) {
+
+                nastepne.click();
+
+            }
+            else {
+
+                poprzednie.click();
+
+            }
+
+        }
+
+    },
+    { passive: true }
+);
+
+
+/* =====================================================
+   ZMIANA ROZMIARU OKNA
+   ===================================================== */
+
+window.addEventListener(
+    "resize",
+    function() {
+
+        dopasujZdjecie();
+
+    }
+);
+
+
+/* =====================================================
+   START
+   ===================================================== */
+
+pokazZdjecie();
+
+</script>
+
+
+</body>
+
+</html>
