@@ -18,7 +18,7 @@ viewBox="0 0 1200 2400"
     .fnt1 {font-weight:normal;font-size:28pt;font-family:'Calibri'}
     .fnt0 {font-weight:bold;font-size:28pt;font-family:'Calibri'}
 	 .rollover-link {
-      transition: opacity 0.3s ease, filter 0.3s ease;
+      transition: opacity 0.3s ease; filter 0.3s ease;
       opacity: 1;
 	  filter: aturate(99%) brightness(100%); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
@@ -40,7 +40,7 @@ viewBox="0 0 1200 2400"
   display: inline;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 650px) {
   .ukryj-osiemset {
     display: none;
   }
