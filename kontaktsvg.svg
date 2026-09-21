@@ -40,7 +40,7 @@ viewBox="0 0 1200 1800"
   display: inline;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 699px) {
   .ukryj-osiemset {
     display: none;
   }
