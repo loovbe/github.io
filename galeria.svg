@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%"
+     height="100%"
+     viewBox="0 0 1200 1500"
+     preserveAspectRatio="xMidYMin meet">
+
+<defs>
+
+<style type="text/css">
+<![CDATA[
+
+/* =====================================================
+   ROLLOVER – ZACHOWANY
+   ===================================================== */
+
+.rollover-link {
+    transition: opacity 0.3s ease;
+    opacity: 1;
+
+    filter:
+        invert(1)
+        grayscale(100%)
+        sepia(100%)
+        hue-rotate(170deg)
+        saturate(340%)
+        brightness(80%)
+        invert(1);
+}
+
+.rollover-link:hover {
+    filter:
+        invert(1)
+        grayscale(90%)
+        sepia(80%)
+        hue-rotate(180deg)
+        saturate(400%)
+        brightness(100%)
+        invert(1);
+}
+
+
+/* =====================================================
+   MENU MOBILNE
+   ===================================================== */
+
+.tylko-mobilne {
+    display: inline;
+}
+
+@media (min-width:768px) {
+
+    .tylko-mobilne {
+        display:none;
+    }
+
+}
+
+
+/* =====================================================
+   NAWIGACJA DESKTOP
+   ===================================================== */
+
+.nawigacja-desktop {
+    display:inline;
+}
+
+@media (max-width:767px) {
+
+    .nawigacja-desktop {
+        display:none;
+    }
+
+}
+
+]]>
+</style>
+
+</defs>
+
+
+<!-- =====================================================
+     JEDNOLITE TŁO
+     ===================================================== -->
+
+<rect
+    x="0"
+    y="0"
+    width="1200"
+    height="1500"
+    fill="#FFFFFF"/>
+
+
+<!-- =====================================================
+     ZDJĘCIE GALERII
+     
+     PEŁNA SZEROKOŚĆ SVG = 1200
+     
+     Wysokość jest na razie duża, ale zdjęcie zachowuje
+     swoje proporcje dzięki preserveAspectRatio.
+     ===================================================== -->
+
+<image
+    id="zdjecie-galerii"
+
+    x="0"
+    y="0"
+
+    width="1200"
+    height="1300"
+
+    preserveAspectRatio="xMidYMid meet"
+
+    xlink:href="glownaimages/zdjecie01b.jpg"/>
+
+
+<!-- =====================================================
+     NAWIGACJA DESKTOP
+     ===================================================== -->
+
+<g
+    id="nawigacja-desktop"
+    class="nawigacja-desktop">
+
+
+    <!-- O NAS -->
+
+    <a
+        xlink:href="index.html"
+        target="_top"
+        class="rollover-link">
+
+        <image
+            x="30"
+            y="1320"
+
+            width="259.078"
+            height="112.829"
+
+            xlink:href="glownaimages/onas.gif"/>
+
+    </a>
+
+
+    <!-- USŁUGI -->
+
+    <a
+        xlink:href="uslugi.html"
+        target="_top"
+        class="rollover-link">
+
+        <image
+            x="315"
+            y="1320"
+
+            width="259.078"
+            height="112.829"
+
+            xlink:href="glownaimages/uslugi.gif"/>
+
+    </a>
+
+
+    <!-- GALERIA -->
+
+    <a
+        xlink:href="galeria.html"
+        target="_top"
+        class="rollover-link">
+
+        <image
+            x="600"
+            y="1320"
+
+            width="259.078"
+            height="112.829"
+
+            xlink:href="glownaimages/galeria.gif"/>
+
+    </a>
+
+
+    <!-- KONTAKT -->
+
+    <a
+        xlink:href="kontakt.html"
+        target="_top"
+        class="rollover-link">
+
+        <image
+            x="885"
+            y="1320"
+
+            width="259.078"
+            height="112.829"
+
+            xlink:href="glownaimages/kontakt.gif"/>
+
+    </a>
+
+</g>
+
+
+<!-- =====================================================
+     MENU MOBILNE
+     ===================================================== -->
+
+<a
+    xlink:href="menu.html"
+    target="_top"
+    class="rollover-link tylko-mobilne">
+
+    <image
+        x="485"
+        y="1320"
+
+        width="229.153"
+        height="96.8576"
+
+        xlink:href="glownaimages/menu.png"/>
+
+</a>
+
+
+</svg>
