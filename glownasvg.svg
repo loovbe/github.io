@@ -18,7 +18,7 @@ viewBox="0 0 1200 1800"
     .fnt1 {font-weight:normal;font-size:28pt;font-family:'Calibri'}
     .fnt0 {font-weight:bold;font-size:28pt;font-family:'Calibri'}
 	 .rollover-link {
-      transition: opacity 0.3s ease; filter 0.3s ease;
+      transition: opacity 0.3s ease, filter 0.3s ease;
       opacity: 1;
 	  filter: saturate(99%) brightness(100%); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
@@ -26,13 +26,25 @@ viewBox="0 0 1200 1800"
       filter: invert(1) grayscale(90%) sepia(80%) hue-rotate(180deg) saturate(400%) brightness(100%) invert(1); /* Zmień wartość, aby dostosować stopień przyciemnienia opacity: 0.7/przezroczystości */
     }
    /* Styl ukrywający element na ekranach od 768px wzwyż (tablety i komputery) */
-    .tylko-mobilne {
-      display: inline;
-    }
-    @media (min-width: 768px) {
-      .tylko-mobilne {
-        display: none;
-    }
+   .tylko-mobilne {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .tylko-mobilne {
+    display: none;
+  }
+}
+
+.ukryj-osiemset {
+  display: inline;
+}
+
+@media (max-width: 800px) {
+  .ukryj-osiemset {
+    display: none;
+  }
+}
    ]]>
   </style>
  </defs>
@@ -118,7 +130,8 @@ nr 20, po lewej stronie od wjazdu na osiedle. </p>
 </foreignObject>
  <g id="Warstwa_x0020_2">
   <metadata id="ClCorpID_1Cl-Layer"/>
-  <metadata id="ClCorpID_1Cl-Layer"/>
+  <!-- TYLKO ELEMENTY DO UKRYCIA -->
+  <g class="ukryj-osiemset">
   <a xlink:href="index.html" target="_top" class="rollover-link">
   <image transform="matrix(1 0 0 1 -263.11 -254.285)" x="600" y="816.257" width="192.291" height="83.7425" xlink:href="glownaimages/onas.gif"/>
   </a>
@@ -131,6 +144,7 @@ nr 20, po lewej stronie od wjazdu na osiedle. </p>
  <a xlink:href="kontakt.html" target="_top" class="rollover-link">
   <image transform="matrix(1 0 0 1 370.569 -254.285)" x="600" y="816.257" width="192.291" height="83.7425"  xlink:href="glownaimages/kontakt.gif"/>
  </a>
+ </g>
  <path class="fil5" d="M269.01 555.138l0.0547087 0 0.00198425 0 0 0.0155906c9.14939,0.000566929 17.4546,3.73096 23.4635,9.74013 6.00775,6.00832 9.73786,14.3121 9.739,23.4601l0.0155906 0 0 0.00425197 0 140.543 -7.99994 0 0 -140.543 0 -0.00425197 0.0155906 0c-0.000850394,-6.91852 -2.84542,-13.2225 -7.42649,-17.8038 -4.58221,-4.58249 -10.8873,-7.42734 -17.8072,-7.42762l0 0.0155906 -0.00198425 0 -0.0547087 0 0 -7.99994z"/>
  </g>
 </svg>
