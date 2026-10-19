@@ -1,47 +1,377 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-  <title>kosmetologia </title>
-  <meta name="description" content="brwi" />
-  	
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karuzela zdjęć</title>
+
 <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            background-color: #ded1c1;
-            background-image: url('tlo.gif');
-            background-repeat: repeat;
-        }
-        .svg-container {
-            width: 100%;
-            max-width: 1200px; /* Maksymalna szerokość na dużych ekranach */
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box;
-            background: #ffffff;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        .svg-container object {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 1200 / 1800; /* Wymusza proporcje 2:3 z viewBox pliku SVG */
-            display: block;
-        }
-    </style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+  }
+
+  /* Główny kontener */
+  .gallery {
+    --gap: 16px;
+    --visible: 3;
+
+    width: 100%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .gallery-window {
+    overflow: hidden;
+    width: 100%;
+    touch-action: pan-y;
+    cursor: grab;
+  }
+
+  .gallery-window:active {
+    cursor: grabbing;
+  }
+
+  .gallery-track {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    will-change: transform;
+  }
+
+  .gallery-item {
+    flex: 0 0 calc(
+      (100% - (var(--visible) - 1) * var(--gap))
+      / var(--visible)
+    );
+
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #f3f3f3;
+    border-radius: 8px;
+  }
+
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Przyciski */
+  .gallery-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .gallery-btn {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: white;
+    color: #222;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .gallery-btn:hover {
+    background: #eee;
+  }
+
+  .gallery-btn:focus-visible {
+    outline: 2px solid #222;
+    outline-offset: 3px;
+  }
+
+  .gallery-status {
+    font-size: 14px;
+    color: #555;
+    min-width: 60px;
+    text-align: center;
+  }
+
+  /* Tablet */
+  @media (max-width: 900px) {
+    .gallery {
+      --visible: 3;
+    }
+
+    .gallery-item {
+      height: 300px;
+    }
+  }
+
+  /* Telefon */
+  @media (max-width: 600px) {
+    .gallery {
+      --visible: 1.4;
+      --gap: 12px;
+      padding: 0 12px;
+    }
+
+    .gallery-item {
+      height: 300px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gallery-track {
+      will-change: auto;
+    }
+  }
+</style>
 </head>
+
 <body>
 
-    <div class="svg-container">
-        <object type="image/svg+xml" data="glownasvg.svg">
-            Twoja przeglądarka nie obsługuje formatu SVG.
-        </object>
+<section class="gallery" aria-label="Galeria zdjęć">
+
+  <div class="gallery-window">
+    <div class="gallery-track">
+
+      <!-- Zmień adresy na własne zdjęcia -->
+      <div class="gallery-item">
+        <img src="images/01.jpg"
+             alt="Zdjęcie 1" draggable="false">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/02.jpg"
+             alt="Zdjęcie 2" draggable="false">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/03.jpg"
+             alt="Zdjęcie 3" draggable="false">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/04.jpg"
+             alt="Zdjęcie 4" draggable="false">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/05.jpg"
+             alt="Zdjęcie 5" draggable="false">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/06.jpg"
+             alt="Zdjęcie 6" draggable="false">
+      </div>
+
     </div>
-    <p>Opis</p>
+  </div>
+
+  <div class="gallery-controls">
+    <button class="gallery-btn prev"
+            type="button"
+            aria-label="Poprzednie zdjęcia">‹</button>
+
+    <span class="gallery-status"
+          aria-live="polite">1 / 6</span>
+
+    <button class="gallery-btn next"
+            type="button"
+            aria-label="Następne zdjęcia">›</button>
+  </div>
+
+</section>
+
+<script>
+(() => {
+  const gallery = document.querySelector(".gallery");
+  const windowEl = gallery.querySelector(".gallery-window");
+  const track = gallery.querySelector(".gallery-track");
+  const status = gallery.querySelector(".gallery-status");
+  const prevBtn = gallery.querySelector(".prev");
+  const nextBtn = gallery.querySelector(".next");
+
+  const originalItems = [...track.children];
+  const count = originalItems.length;
+
+  if (!count) return;
+
+  let index = 0;
+  let step = 0;
+  let timer = null;
+  let startX = 0;
+  let dragX = 0;
+  let dragging = false;
+  let moved = false;
+
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  );
+
+  // Klonowanie elementów umożliwia płynną pętlę.
+  originalItems.forEach(item => {
+    track.appendChild(item.cloneNode(true));
+  });
+
+  function measure() {
+    const first = track.children[0];
+    if (!first) return;
+
+    const styles = getComputedStyle(track);
+    const gap = parseFloat(styles.columnGap) || 0;
+
+    step = first.getBoundingClientRect().width + gap;
+  }
+
+  function updateStatus() {
+    status.textContent = (index % count + 1) + " / " + count;
+  }
+
+  function move(animate = true) {
+    track.style.transition =
+      animate && !reduceMotion.matches
+        ? "transform 450ms ease"
+        : "none";
+
+    track.style.transform =
+      `translate3d(${-index * step}px, 0, 0)`;
+
+    updateStatus();
+  }
+
+  function next() {
+    index++;
+    move(true);
+  }
+
+  function prev() {
+    if (index === 0) {
+      index = count;
+      move(false);
+
+      // Przeniesienie bez animacji przed ruchem wstecz.
+      track.getBoundingClientRect();
+    }
+
+    index--;
+    move(true);
+  }
+
+  track.addEventListener("transitionend", () => {
+    if (index >= count) {
+      index = 0;
+      move(false);
+    }
+  });
+
+  function stopAuto() {
+    clearInterval(timer);
+    timer = null;
+  }
+
+  function startAuto() {
+    stopAuto();
+
+    if (reduceMotion.matches) return;
+
+    timer = setInterval(next, 3500);
+  }
+
+  prevBtn.addEventListener("click", () => {
+    prev();
+    startAuto();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    next();
+    startAuto();
+  });
+
+  // Pauza po najechaniu myszą.
+  gallery.addEventListener("mouseenter", stopAuto);
+  gallery.addEventListener("mouseleave", startAuto);
+
+  // Obsługa przesuwania myszą i palcem.
+  windowEl.addEventListener("pointerdown", event => {
+    if (event.pointerType === "mouse" && event.button !== 0) {
+      return;
+    }
+
+    dragging = true;
+    moved = false;
+    startX = event.clientX;
+    dragX = 0;
+    track.style.transition = "none";
+    stopAuto();
+
+    windowEl.setPointerCapture(event.pointerId);
+  });
+
+  windowEl.addEventListener("pointermove", event => {
+    if (!dragging) return;
+
+    dragX = event.clientX - startX;
+
+    if (Math.abs(dragX) > 5) moved = true;
+
+    track.style.transform =
+      `translate3d(${(-index * step) + dragX}px, 0, 0)`;
+  });
+
+  function finishDrag() {
+    if (!dragging) return;
+
+    dragging = false;
+
+    if (Math.abs(dragX) > step * 0.2) {
+      if (dragX < 0) {
+        index++;
+      } else if (index > 0) {
+        index--;
+      } else {
+        index = count - 1;
+      }
+    }
+
+    move(true);
+    startAuto();
+  }
+
+  windowEl.addEventListener("pointerup", finishDrag);
+  windowEl.addEventListener("pointercancel", finishDrag);
+
+  // Zatrzymuje przypadkowe przeciąganie obrazka.
+  windowEl.addEventListener("click", event => {
+    if (moved) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
+
+  window.addEventListener("resize", () => {
+    measure();
+    move(false);
+  });
+
+  reduceMotion.addEventListener?.("change", startAuto);
+
+  measure();
+  move(false);
+  startAuto();
+})();
+</script>
 
 </body>
 </html>
